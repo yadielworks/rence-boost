@@ -29,9 +29,9 @@ app.post('/react', async (req, res) => {
     const responseData = response.data;
 
     if (responseData.status === 200) {
-      res.json({ message: "Reaction sent successfully!" });
+      res.json({ message: "TAPOS NA, PAKICHECK BABY!" });
     } else {
-      res.json({ error: "Failed to send reaction. Response: " + JSON.stringify(responseData) });
+      res.json({ error: "HINDI NAG SEND SORRY BABY. Response: " + JSON.stringify(responseData) });
     }
   } catch (error) {
     res.json({ error: "Error: " + error.message });
